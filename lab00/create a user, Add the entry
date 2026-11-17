@@ -1,0 +1,27 @@
+┌──(root㉿kali)-[~]
+└─# whoami
+root
+                                                                                                                                                           
+┌──(root㉿kali)-[~]
+└─# sudo adduser satishsingh
+fatal: The user `satishsingh' already exists.
+                                                                                                                                                           
+┌──(root㉿kali)-[~]
+└─# sudo adduser satishkumar
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for satishkumar
+Enter the new value, or press ENTER for the default
+        Full Name []: Satish Kumar Singh
+        Room Number []: 
+        Work Phone []: 
+        Home Phone []: 
+        Other []: 
+Is the information correct? [Y/n] Y
+                                                                                                                                                           
+┌──(root㉿kali)-[~]
+└─# sudo usermod -aG sudo satishkumar
+                                                                                                                                                           
+┌──(root㉿kali)-[~]
+└─# sudo visudo   
