@@ -1,0 +1,24 @@
+@SatishKumarSingh-gif ➜ /workspaces/codespaces-blank $ su - user
+Password: 
+rm: cannot remove '/usr/local/share/nvm/current': Permission denied
+user@codespaces-d9270c:/workspaces/codespaces-blank$ cd ~
+user@codespaces-d9270c:~$ pwd
+/home/user
+user@codespaces-d9270c:~$ mkdir linux-exercise
+user@codespaces-d9270c:~$ ls
+linux-exercise
+user@codespaces-d9270c:~$ cd linux-exercise
+user@codespaces-d9270c:~/linux-exercise$ pwd
+/home/user/linux-exercise
+user@codespaces-d9270c:~/linux-exercise$ 
+
+
+
+
+
+
+
+
+
+
+[tmate] ssh.tmate.io lookup failure. Retrying in 2 seconds (nodename nor servname provided, or not known)                
