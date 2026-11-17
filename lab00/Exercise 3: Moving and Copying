@@ -1,9 +1,0 @@
-user@codespaces-d9270c:~/linux-exercise$ cd ~/linux-exercise/test
-user@codespaces-d9270c:~/linux-exercise/test$ ls
-description.txt
-user@codespaces-d9270c:~/linux-exercise/test$ mv description.txt my_profile.txt
-user@codespaces-d9270c:~/linux-exercise/test$ ls
-my_profile.txt
-user@codespaces-d9270c:~/linux-exercise/test$ cp my_profile.txt ~/
-user@codespaces-d9270c:~/linux-exercise/test$ ls ~
-linux-exercise  my_profile.txt
