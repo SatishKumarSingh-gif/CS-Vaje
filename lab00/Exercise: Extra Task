@@ -1,6 +1,0 @@
-user@codespaces-d9270c:~/linux-exercise/test$ du -ah ~ | sort -rh | head -n 5
-44K     /home/user
-12K     /home/user/linux-exercise
-12K     /home/user/.local
-8.0K    /home/user/linux-exercise/test
-8.0K    /home/user/.local/share
