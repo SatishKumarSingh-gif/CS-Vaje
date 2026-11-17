@@ -1,8 +1,0 @@
-user@codespaces-d9270c:~/linux-exercise$ nano description.txt
-user@codespaces-d9270c:~/linux-exercise$ mkdir test
-user@codespaces-d9270c:~/linux-exercise$ ls
-description.txt  test
-user@codespaces-d9270c:~/linux-exercise$ mv description.txt test/
-user@codespaces-d9270c:~/linux-exercise$ ls test
-description.txt
-user@codespaces-d9270c:~/linux-exercise$ 
