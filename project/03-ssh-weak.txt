@@ -1,0 +1,11 @@
+ssh weakuser@localhost -p 2222
+
+Enter the lab password when prompted.
+
+If the login succeeds, you will enter the remote shell.
+
+To leave the SSH session:
+exit
+
+If SSH reports that the remote host identification has changed after rebuilding the container, use:
+ssh-keygen -R "[localhost]:2222"
