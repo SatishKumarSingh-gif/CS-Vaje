@@ -1,0 +1,27 @@
+#Verify the GPG signature
+#Run:
+gpg --homedir ~/labops/gnupg-release \
+--verify install.sh.sha256.asc install.sh.sha256
+#Modify the installation script
+printf '\necho This file was modified\n' >> install.sh
+#This adds one line to the file.
+#Check the script:
+cat install.sh
+#You should now see:
+echo LabOps enrollment helper 1.0
+echo This file was modified
+#Check the checksum again
+#Run:
+sha256sum -c install.sh.sha256
+#Expected result:
+install.sh: FAILED
+#Check the GPG signature again
+#Run:
+gpg --homedir ~/labops/gnupg-release \
+--verify install.sh.sha256.asc install.sh.sha256
+#Save the checksum failure:
+sha256sum -c install.sh.sha256 2>&1 | tee ~/labops/evidence/07-checksum-fail.txt
+#Save the signature verification output separately:
+gpg --homedir ~/labops/gnupg-release \
+--verify install.sh.sha256.asc install.sh.sha256 \
+2>&1 | tee ~/labops/evidence/08-signature-check.txt
