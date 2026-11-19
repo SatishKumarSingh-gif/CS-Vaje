@@ -1,0 +1,10 @@
+#Display the genuine fingerprint
+gpg --homedir ~/labops/gnupg-release --fingerprint labops-release@labops.example
+
+
+#Display the attacker's fingerprint
+gpg --homedir ~/labops/gnupg-attacker --fingerprint labops-release@labops.example
+
+
+#Compare both fingerprints
+cat ~/labops/evidence/fingerprints.txt
