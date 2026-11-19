@@ -1,14 +1,14 @@
-Run:
+#Run
 gpg --homedir ~/labops/gnupg-release --fingerprint labops-release@labops.example
 
 
-Now run:
+#Now run
 gpg --homedir ~/labops/gnupg-attacker --fingerprint labops-release@labops.example
 
 
-You will get two different fingerprints.
+#You will get two different fingerprints.
 
-Save both:
+#Save both:
 {
 echo "=== release key ==="
 gpg --homedir ~/labops/gnupg-release --fingerprint labops-release@labops.example
@@ -17,5 +17,5 @@ gpg --homedir ~/labops/gnupg-attacker --fingerprint labops-release@labops.exampl
 } > ~/labops/evidence/fingerprints.txt
 
 
-View the file:
+#View the file:
 cat ~/labops/evidence/fingerprints.txt
